@@ -18,7 +18,7 @@ window.addEventListener('wheel', (event) => {
     }
 });
 
-// Optionnel : Ajoutez une écoute pour les flèches du clavier
+// Ajoute une écoute pour les flèches du clavier
 window.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowDown') {
         scrollToSection(currentSection + 1);
