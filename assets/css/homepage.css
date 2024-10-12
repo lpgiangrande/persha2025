@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  overflow: hidden; /* Masque le défilement normal de la page */
+}
+
+.section {
+  height: 100vh; /* Chaque section remplit 100% de la hauteur de la fenêtre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+#section1 {
+  background-color: #ff5733; /* Couleur de la section 1 */
+}
+
+#section2 {
+  background-color: #33c1ff; /* Couleur de la section 2 */
+}
+
+#section3 {
+  background-color: #33ff57; /* Couleur de la section 3 */
+}
+
+#section4 {
+  background-color: #ff33b5; /* Couleur de la section 4 */
+}
