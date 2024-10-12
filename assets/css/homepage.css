@@ -13,7 +13,29 @@ body {
 }
 
 #section1 {
-  background-color: #ff5733; /* Couleur de la section 1 */
+  background-image: url("/assets/img/bg2024_large.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* bg img for medium screens */
+@media (max-width: 1280px) {
+  #section1 {
+    background-image: url("assets/img/bg2024_small.webp");
+  }
+}
+
+/* bg img for small screens */
+@media (max-width: 1024px) {
+  #section1 {
+    background-image: url("assets/img/bg2024_small.webp");
+  }
 }
 
 #section2 {
