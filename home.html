@@ -18,6 +18,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/homepage.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
     <!-- <link rel="stylesheet" href="/assets/css/switch-bg.css"> -->
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -31,28 +32,66 @@
 <body class=" bg-default">
     <header>
         <nav>
-            <ul>
+            <ul class="nav-left">
                 <li>
                     <a href="#section1">
                         <img src="assets/logos/logopersha.webp" alt="Persha's logo" class="logo">
                     </a>
                 </li>
                 <li><a href="#section2">Music</a></li>
-                <li><a href="#section3">Tour</a></li>
-                <li><a href="#section4">Videos</a></li>
-                <li><a href="#section5">Bio</a></li>
-                <li><a href="#section6">Contact</a></li>
+                <li><a href="#section3">live</a></li>
+                <li><a href="#section4">videos</a></li>
+                <li><a href="#section5">bio</a></li>
+                <li><a href="#section6">contact</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="https://www.instagram.com/pershamusic" target="_blank" aria-label="Instagram"><i class="fab fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/pershamusic" target="_blank" aria-label="Facebook"><i class="fab fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/pershamusic" target="_blank" aria-label="Twitter"><i class="fab fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJVJ54MUjJtYfQlE0QXaRUg" target="_blank" aria-label="YouTube"><i class="fab fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/1IsgfKVCqukd5GOJftZ19F?si=pUUYuSsQTaWKuL8TCU3kkQ" target="_blank" aria-label="Spotify"><i class="fab fa-brands fa-spotify"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="section" id="section1">
-         <h1>NEW EP COMING SOON</h1>
+            <h2 class="section-title">
+                new ep coming soon
+            </h2>
         </section>
-        <section class="section" id="section2">Section 2</section>
-        <section class="section" id="section3">Section 3</section>
-        <section class="section" id="section4">Section 4</section>
+        <section class="section" id="section2">
+            <h2 class="section-title">
+                <a href="#section2">music</a>
+            </h2>
+        </section>
+        <section class="section" id="section3">
+            <h2 class="section-title">
+                <a href="#section3">live</a>
+            </h2>
+        </section>
+        <section class="section" id="section4">
+            <h2 class="section-title">
+                <a href="#section4">videos</a>
+            </h2>
+        </section>
+        <section class="section" id="section5">
+            <h2 class="section-title">
+                <a href="#section5">bio</a>
+            </h2>
+        </section>
+        <section class="section" id="section6">
+            <h2 class="section-title">contact</h2>
+            <h3><a href="mailto:contact@mangata-music.com">contact@mangata-music.com</a></h3>
+        </section>
     </main>
+    <footer id="footer">
+        <div class="container text-center mb-1" id="footer-text">
+            <span>&copy; <script>document.write(new Date().getFullYear());</script></span>
+            <a href="https://mangata-music.com">Mangata</a>
+            <span>All rights reserved.</span>
+            <span><a href="/legal-information.html">| legal information </a></span>
+        </div>
+    </footer>    
     
 <script src="/assets/js/scrollHomepage.js"></script>
 <!-- Bootstrap JS-->

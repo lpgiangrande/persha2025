@@ -1,0 +1,25 @@
+/* Pour garantir que la page prend toute la hauteur */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Le main doit prendre tout l'espace disponible sauf celui du footer */
+main {
+  flex: 1; /* Le main prend toute la hauteur disponible */
+}
+
+/* Footer sticky */
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Position pour un footer sticky */
+}

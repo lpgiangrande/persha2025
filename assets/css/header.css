@@ -1,28 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 header {
-  position: fixed; /* Fixe le header en haut de la page */
-  width: 100%; /* Prend toute la largeur */
-  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
-  color: white; /* Couleur du texte */
-  z-index: 1000; /* Assure que le header est au-dessus des sections */
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 1000;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 nav ul {
-  list-style-type: none; /* Enlève les puces */
-  padding: 0; /* Enlève le padding */
-  margin: 0; /* Enlève la marge */
-  display: flex; /* Affiche les éléments en ligne */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 nav ul li {
-  margin: 0 20px; /* Espacement entre les liens */
+  margin: 0 20px;
 }
 
 nav ul li a {
-  color: white; /* Couleur des liens */
-  text-decoration: none; /* Enlève le soulignement */
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
   width: auto;
 }
