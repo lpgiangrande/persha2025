@@ -1,11 +1,15 @@
 body {
   margin: 0;
-  overflow: hidden; /* Masque le défilement normal de la page */
+  /* overflow: hidden; Masque le défilement normal de la page */
   font-size: 16px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .section {
@@ -74,25 +78,25 @@ body {
 
 #section2 {
   height: 80vh;
-  background-color: #33c1ff; /* Couleur de la section 2 */
+  background-color: #33c1ff;
 }
 
 #section3 {
   height: 80vh;
-  background-color: #33ff57; /* Couleur de la section 3 */
+  background-color: #33ff57;
 }
 
 #section4 {
   height: 80vh;
-  background-color: #ff33b5; /* Couleur de la section 4 */
+  background-color: #ff33b5;
 }
 
 #section5 {
   height: 80vh;
-  background-color: #330c25; /* Couleur de la section 4 */
+  background-color: #330c25;
 }
 
 #section6 {
   height: 30vh;
-  background-color: #b9b1b6; /* Couleur de la section 4 */
+  background-color: #b9b1b6;
 }
