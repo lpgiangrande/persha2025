@@ -17,7 +17,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* font-size: 2rem; */
   color: whitesmoke;
 }
 
@@ -27,7 +26,7 @@ html {
 }
 
 .section-title a:hover {
-  color: #e96dbc;
+  color: #eb159c;
   transition: color 0.3s ease;
 }
 
@@ -42,8 +41,15 @@ html {
 }
 
 #section1 .section-title {
-  font-size: clamp(4rem, 8vw, 10rem);
+  font-size: clamp(3rem, 8vw, 8rem);
 }
+
+/* .neon {
+  text-shadow: 0 0 5px rgb(160, 54, 163), 0 0 10px rgb(160, 54, 163),
+    0 0 20px rgb(160, 54, 163), 0 0 40px rgb(160, 54, 163),
+    0 0 80px rgb(160, 54, 163), 0 0 90px rgb(160, 54, 163),
+    0 0 100px rgb(160, 54, 163);
+} */
 
 #section6 .section-title {
   font-size: clamp(2rem, 3vw, 4rem);
@@ -51,10 +57,11 @@ html {
 
 #section1 {
   height: 100vh;
-  background-image: url("/assets/img/bg2024_large.webp");
+  background-image: url("/assets/img/bg2024_lg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: black;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -65,14 +72,14 @@ html {
 /* bg img for medium screens */
 @media (max-width: 1280px) {
   #section1 {
-    background-image: url("assets/img/bg2024_small.webp");
+    background-image: url("/assets/img/bg2024_md.webp"); /* Image de fond pour les écrans moyens */
   }
 }
 
-/* bg img for small screens */
-@media (max-width: 1024px) {
+/* bg img for smaller screens */
+@media (max-width: 768px) {
   #section1 {
-    background-image: url("assets/img/bg2024_small.webp");
+    background-image: url("/assets/img/bg2024_xs.webp"); /* Image de fond pour les écrans petits */
   }
 }
 
