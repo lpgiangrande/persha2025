@@ -23,6 +23,7 @@ footer {
   align-items: center;
   position: relative; /* Position pour un footer sticky */
   font-size: x-small;
+  z-index: 1000;
 }
 
 footer a {
