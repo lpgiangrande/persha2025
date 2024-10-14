@@ -117,5 +117,9 @@ html {
 
 #section6 {
   height: 30vh;
-  background-color: #d796f2;
+  background-color: #867ab6;
+}
+
+.section a {
+  color: #d796f2;
 }
