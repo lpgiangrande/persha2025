@@ -1,22 +1,21 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* nav */
 
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
   z-index: 1000;
-  padding: 20px;
+  margin-top: 4.5vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #101012;
+  margin-top: 80px;
+  padding-bottom: 60px;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  padding-left: 10px; /* Optional: Add padding for spacing from the edge */
 }
 
 nav ul {
@@ -32,12 +31,47 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #d796f2;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.4em;
+}
+
+nav a:hover {
+  color: #86469c;
 }
 
 .logo {
   height: 40px;
   width: auto;
+}
+
+/* Style pour l'élément aside */
+aside.social-icons {
+  position: fixed;
+  top: 50%; /* Positionne l'aside au milieu de l'écran verticalement */
+  right: 30px; /* Distance par rapport au bord gauche */
+  transform: translateY(-50%); /* Centre l'aside verticalement */
+}
+
+aside.social-icons ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+aside.social-icons li {
+  margin: 0.8em 0; /* Espacement entre les icônes */
+}
+
+aside.social-icons li a {
+  color: #d796f2; /* Couleur des icônes */
+  font-size: 1.6em; /* Taille des icônes, ajustez selon vos préférences */
+  text-decoration: none;
+}
+
+aside.social-icons li a:hover {
+  color: #86469c; /* Couleur de survol des icônes */
 }

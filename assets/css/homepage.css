@@ -20,6 +20,14 @@ html {
   color: whitesmoke;
 }
 
+.section a {
+  color: #d796f2;
+}
+
+.section a:hover {
+  color: #86469c;
+}
+
 .section-title a {
   color: inherit; /* Hérite la couleur du parent (h2) */
   text-decoration: none;
@@ -42,14 +50,18 @@ html {
 
 #section1 .section-title {
   font-size: clamp(3rem, 8vw, 8rem);
+  color: #d796f2;
 }
 
-/* .neon {
-  text-shadow: 0 0 5px rgb(160, 54, 163), 0 0 10px rgb(160, 54, 163),
-    0 0 20px rgb(160, 54, 163), 0 0 40px rgb(160, 54, 163),
-    0 0 80px rgb(160, 54, 163), 0 0 90px rgb(160, 54, 163),
-    0 0 100px rgb(160, 54, 163);
-} */
+.neon {
+  color: white; /* Main text color set to white */
+  position: relative;
+  text-shadow: 
+    /* Outer neon glow with reduced spread and blur */ 0 0 3px
+      rgb(163, 130, 174),
+    0 0 7px rgb(134, 70, 156), 0 0 10px rgb(134, 70, 156),
+    0 0 15px rgb(134, 70, 156), 0 0 20px rgb(134, 70, 156);
+}
 
 #section6 .section-title {
   font-size: clamp(2rem, 3vw, 4rem);
@@ -61,7 +73,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: #212226;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -85,25 +97,25 @@ html {
 
 #section2 {
   height: 80vh;
-  background-color: #33c1ff;
+  background-color: #212226;
 }
 
 #section3 {
   height: 80vh;
-  background-color: #33ff57;
+  background-color: #4f505e;
 }
 
 #section4 {
   height: 80vh;
-  background-color: #ff33b5;
+  background-color: #38383d;
 }
 
 #section5 {
   height: 80vh;
-  background-color: #330c25;
+  background-color: #520075;
 }
 
 #section6 {
   height: 30vh;
-  background-color: #b9b1b6;
+  background-color: #d796f2;
 }
