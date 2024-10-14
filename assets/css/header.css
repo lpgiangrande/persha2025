@@ -48,34 +48,36 @@ nav a:hover {
   width: auto;
 }
 
-@keyframes electric {
+@keyframes flicker {
   0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
   100% {
-    text-shadow: 0 0 1px #d796f2, 0 0 2px rgba(215, 150, 242, 0.5); /* Halo atténué */
+    text-shadow: 0 0 0.2rem #d796f2, /* Neon text color */ 0 0 0.5rem #d796f2; /* Reduced halo effect */
+
+    box-shadow: none; /* Remove box-shadow to eliminate the background effect */
   }
-  10% {
-    text-shadow: 0 0 1px #d796f2, 0 0 2px rgba(215, 150, 242, 0.5); /* Changement léger */
-  }
-  15% {
-    text-shadow: 0 0 1px #d796f2, 0 0 1px rgba(215, 150, 242, 0.5); /* Retour à un halo faible */
-  }
-  25% {
-    text-shadow: 0 0 1px #d796f2, 0 0 3px rgba(215, 150, 242, 0.5); /* Augmentation du halo */
-  }
-  40% {
-    text-shadow: 0 0 1px #d796f2, 0 0 2px rgba(215, 150, 242, 0.5); /* Maintien d'un halo discret */
-  }
-  60% {
-    text-shadow: 0 0 1px #d796f2, 0 0 3px rgba(215, 150, 242, 0.5); /* Changement léger */
-  }
-  80% {
-    text-shadow: 0 0 1px #d796f2, 0 0 1px rgba(215, 150, 242, 0.5); /* Retour à un halo faible */
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
   }
 }
 
-/* Ajout d'une animation au hover avec une durée fixe */
-nav a:hover {
-  animation: electric 1s forwards; /* L'animation s'arrête à la fin */
+/* Apply flicker animation only to the first nav link */
+nav a.flicker-effect {
+  animation: flicker 1.5s infinite;
+}
+
+nav a.flicker-effect:hover {
+  animation: flicker 1.5s infinite alternate; /* Keep flicker on hover */
+  box-shadow: none; /* Ensure no box-shadow on hover */
 }
 
 /* Style pour l'élément aside */
@@ -96,15 +98,16 @@ aside.social-icons ul {
 }
 
 aside.social-icons li {
-  margin: 0.8em 0; /* Espacement entre les icônes */
+  margin: 0.8em 0;
 }
 
 aside.social-icons li a {
-  color: #d796f2; /* Couleur des icônes */
-  font-size: 1.6em; /* Taille des icônes, ajustez selon vos préférences */
+  color: #d796f2;
+  font-size: 1.6em;
   text-decoration: none;
 }
 
 aside.social-icons li a:hover {
-  color: #86469c; /* Couleur de survol des icônes */
+  color: #86469c;
+  transition: color 0.3s ease;
 }
