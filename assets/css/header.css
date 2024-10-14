@@ -48,6 +48,36 @@ nav a:hover {
   width: auto;
 }
 
+@keyframes electric {
+  0%,
+  100% {
+    text-shadow: 0 0 1px #d796f2, 0 0 2px rgba(215, 150, 242, 0.5); /* Halo atténué */
+  }
+  10% {
+    text-shadow: 0 0 1px #d796f2, 0 0 2px rgba(215, 150, 242, 0.5); /* Changement léger */
+  }
+  15% {
+    text-shadow: 0 0 1px #d796f2, 0 0 1px rgba(215, 150, 242, 0.5); /* Retour à un halo faible */
+  }
+  25% {
+    text-shadow: 0 0 1px #d796f2, 0 0 3px rgba(215, 150, 242, 0.5); /* Augmentation du halo */
+  }
+  40% {
+    text-shadow: 0 0 1px #d796f2, 0 0 2px rgba(215, 150, 242, 0.5); /* Maintien d'un halo discret */
+  }
+  60% {
+    text-shadow: 0 0 1px #d796f2, 0 0 3px rgba(215, 150, 242, 0.5); /* Changement léger */
+  }
+  80% {
+    text-shadow: 0 0 1px #d796f2, 0 0 1px rgba(215, 150, 242, 0.5); /* Retour à un halo faible */
+  }
+}
+
+/* Ajout d'une animation au hover avec une durée fixe */
+nav a:hover {
+  animation: electric 1s forwards; /* L'animation s'arrête à la fin */
+}
+
 /* Style pour l'élément aside */
 aside.social-icons {
   position: fixed;

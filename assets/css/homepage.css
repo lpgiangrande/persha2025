@@ -26,6 +26,7 @@ html {
 
 .section a:hover {
   color: #86469c;
+  transition: color 0.3s ease;
 }
 
 .section-title a {
@@ -34,7 +35,7 @@ html {
 }
 
 .section-title a:hover {
-  color: #eb159c;
+  color: #86469c;
   transition: color 0.3s ease;
 }
 
