@@ -20,3 +20,24 @@ nav a {
   font-family: "Protest Strike", sans-serif;
   font-weight: 400;
 }
+
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+#to-top {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.logo {
+  display: block; /* Prevents any extra space caused by inline elements */
+  width: 50px; /* Adjust width as necessary */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+}

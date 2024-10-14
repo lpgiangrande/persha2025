@@ -59,8 +59,12 @@
           <li><a href="https://www.facebook.com/pershamusic" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/pershamusic" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
         </ul>
-      </aside>
-      
+    </aside>
+    <aside id="back-to-top">
+        <button id="to-top" aria-label="Back to Top">
+            <img src="assets/logos/logopersha.svg" alt="Persha's logo" class="logo"> 
+        </button>
+    </aside>
     <main>
         <section class="section" id="section1">
             <h2 class="section-title neon">
@@ -99,8 +103,26 @@
             <span>All rights reserved.</span>
             <span><a href="/legal-information.html">| legal information </a></span>
         </div>
-    </footer>    
-    
+    </footer>   
+<!--scroll to top button-->
+<script>
+    const toTopButton = document.getElementById('to-top');
+
+    toTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    });
+     // Show or hide the button based on scroll position
+     window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                toTopButton.style.display = "block";
+            } else {
+                toTopButton.style.display = "none";
+            }
+        };
+</script>
 <script src="/assets/js/scrollHomepage.js"></script>
 <!-- Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
