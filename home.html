@@ -17,6 +17,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/header_responsive.css">
     <link rel="stylesheet" href="/assets/css/homepage.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <!-- <link rel="stylesheet" href="/assets/css/switch-bg.css"> -->
@@ -32,10 +33,10 @@
     <!-- page title -->
     <title>Home</title>
 </head>
-<body class=" bg-default">
+<body class="bg-default">
     <header>
         <nav>
-            <ul class="nav-left">
+            <ul>
                 <li><a href="#section1" class="flicker-effect"><h1>PERSHA</h1></a></li>
                 <!-- <li>
                     <a href="#section1">
@@ -49,43 +50,43 @@
                 <li><a href="#section6">contact</a></li>
             </ul>
         </nav>
+        <aside class="social-icons">
+            <ul>
+              <li><a href="https://www.youtube.com/channel/UCJVJ54MUjJtYfQlE0QXaRUg" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="https://open.spotify.com/artist/1IsgfKVCqukd5GOJftZ19F?si=pUUYuSsQTaWKuL8TCU3kkQ" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a></li>
+              <li><a href="https://www.instagram.com/pershamusic" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/pershamusic" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/pershamusic" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </aside>
     </header>
-    <aside class="social-icons">
-        <ul>
-          <li><a href="https://www.youtube.com/channel/UCJVJ54MUjJtYfQlE0QXaRUg" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
-          <li><a href="https://open.spotify.com/artist/1IsgfKVCqukd5GOJftZ19F?si=pUUYuSsQTaWKuL8TCU3kkQ" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a></li>
-          <li><a href="https://www.instagram.com/pershamusic" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.facebook.com/pershamusic" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/pershamusic" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-    </aside>
     <aside id="back-to-top">
         <button id="to-top" aria-label="Back to Top">
             <img src="assets/logos/logopersha.svg" alt="Persha's logo" class="logo"> 
         </button>
     </aside>
     <main>
-        <section class="section" id="section1">
+        <section class="section" id="section1"><!--INTRO-->
             <h2 class="section-title neon">
                 new ep coming soon
             </h2>
         </section>
-        <section class="section" id="section2">
+        <section class="section" id="section2"><!--MUSIC-->
             <h2 class="section-title">
                 <a href="#section2">music</a>
             </h2>
         </section>
-        <section class="section" id="section3">
+        <section class="section" id="section3"><!--LIVE-->
             <h2 class="section-title">
                 <a href="#section3">live</a>
             </h2>
         </section>
-        <section class="section" id="section4">
+        <section class="section" id="section4"><!--VIDEOS-->
             <h2 class="section-title">
                 <a href="#section4">videos</a>
             </h2>
         </section>
-        <section class="section" id="section5">
+        <section class="section" id="section5"><!--BIO-->
             <h2 class="section-title">
                 <a href="#section5">bio</a>
             </h2>
@@ -123,6 +124,7 @@
         };
 </script>
 <script src="/assets/js/scrollHomepage.js"></script>
+<script src="/assets/js/removeSocialsAside.js"></script>
 <!-- Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
