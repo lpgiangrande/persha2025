@@ -41,10 +41,30 @@ a {
   padding: 0;
 }
 
-.logo {
-  display: block; /* Prevents any extra space caused by inline elements */
-  width: 50px; /* Adjust width as necessary */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0; /* Remove any default margins */
-  padding: 0; /* Remove any default padding */
+/* LIVE PAGE */
+
+.tour-dates h1 {
+  color: whitesmoke;
+}
+.tour-dates li {
+  color: #4f505e;
+}
+
+.bg-image-live {
+  height: 100vh; /* Full viewport height */
+  background-size: cover; /* Make sure the image covers the entire section */
+  background-position: center;
+}
+
+@media (max-width: 1280px) {
+  .bg-image-live {
+    background-image: url("assets/img/livepage/live_l.webp");
+  }
+}
+
+/* bg img for smaller screens */
+@media (max-width: 768px) {
+  .bg-image-live {
+    background-image: url("assets/img/livepage/live_s.webp");
+  }
 }

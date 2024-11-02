@@ -42,8 +42,8 @@ html {
 .section-title {
   font-size: clamp(
     3rem,
-    5vw,
-    6rem
+    8vw,
+    8rem
   ); /* Taille par défaut pour les autres sections */
   color: whitesmoke;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ html {
 
 #section1 .section-title {
   font-size: clamp(3rem, 8vw, 8rem);
-  color: white;
+  color: whitesmoke;
 }
 
 #section6 .section-title {
@@ -60,29 +60,46 @@ html {
 
 #section1 {
   height: 100vh;
+  position: relative;
   background-image: url("/assets/img/bg2024_lg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #212226;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: whitesmoke;
+  overflow: hidden;
+}
+
+#section1::before {
+  content: "";
+  position: absolute; /* Positionnement absolu pour couvrir le parent */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Overlay semi-transparent */
+  z-index: 1; /* Positionne l'overlay en dessous du texte */
+}
+
+#section1 h1 {
+  position: relative; /* Nécessaire pour le z-index */
+  z-index: 2; /* Pour que le texte soit au-dessus de l'overlay */
 }
 
 /* bg img for medium screens */
 @media (max-width: 1280px) {
   #section1 {
-    background-image: url("/assets/img/bg2024_md.webp"); /* Image de fond pour les écrans moyens */
+    background-image: url("/assets/img/bg2024_md.webp");
   }
 }
 
 /* bg img for smaller screens */
 @media (max-width: 768px) {
   #section1 {
-    background-image: url("/assets/img/bg2024_xs.webp"); /* Image de fond pour les écrans petits */
+    background-image: url("/assets/img/bg2024_xs.webp");
   }
 }
 

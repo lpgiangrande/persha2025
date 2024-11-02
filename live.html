@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/header_responsive.css">
-    <link rel="stylesheet" href="/assets/css/homepage.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <!-- <link rel="stylesheet" href="/assets/css/switch-bg.css"> -->
     <!-- Import Lenis CSS -->
@@ -44,7 +43,7 @@
                     </a>
                 </li> -->
                 <li><a href="#section2">music</a></li>
-                <li><a href="/live.html">live</a></li>
+                <li><a href="#section3">live</a></li>
                 <li><a href="#section4">videos</a></li>
                 <li><a href="#section5">bio</a></li>
                 <li><a href="#section6">contact</a></li>
@@ -65,36 +64,25 @@
             <img src="assets/logos/logopersha.svg" alt="Persha's logo" class="logo"> 
         </button>
     </aside>
-    <main>
-        <section class="section" id="section1"><!--INTRO-->
-            <h2 class="section-title">
-                new ep coming soon
-            </h2>
-        </section>
-        <section class="section" id="section2"><!--MUSIC-->
-            <h2 class="section-title">
-                <a href="#section2">music</a>
-            </h2>
-        </section>
-        <section class="section" id="section3"><!--LIVE-->
-            <h2 class="section-title">
-                <a href="/live.html">live</a>
-            </h2>
-        </section>
-        <section class="section" id="section4"><!--VIDEOS-->
-            <h2 class="section-title">
-                <a href="#section4">videos</a>
-            </h2>
-        </section>
-        <section class="section" id="section5"><!--BIO-->
-            <h2 class="section-title">
-                <a href="#section5">bio</a>
-            </h2>
-        </section>
-        <section class="section" id="section6">
-            <h2 class="section-title">contact</h2>
-            <h3><a href="mailto:contact@mangata-music.com">contact@mangata-music.com</a></h3>
-        </section>
+    <main class="bg-image-live d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+
+            <!-- Tour Dates Section -->
+            <section class="tour-dates mt-4"> 
+                <h1>Past Dates</h1>
+                <ul class="list-unstyled">
+                    <li>June 22th, 2022 - Paris Zénith with Carpenter Brut - France</li>
+                    <li>October 30th, 2022 - Paris Zénith with Carpenter Brut - France</li>
+                    <li>June 16th, 2023 - Lille Aéronef with Carpenter Brut - France</li>
+                    <li>June 17th, 2023 - Clisson Hellfest with Carpenter Brut - France</li>
+                </ul>
+                <br>
+                <h1>Upcoming Tour Dates</h1>
+                <ul class="list-unstyled">
+                    <li>Stay tuned</li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer id="footer">
         <div class="container text-center mb-1" id="footer-text">
@@ -104,28 +92,28 @@
             <span><a href="/legal-information.html">| legal information </a></span>
         </div>
     </footer>   
-<!--scroll to top button-->
-<script>
-    const toTopButton = document.getElementById('to-top');
+    <!--scroll to top button-->
+    <script>
+        const toTopButton = document.getElementById('to-top');
 
-    toTopButton.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' 
+        toTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            });
         });
-    });
-     // Show or hide the button based on scroll position
-     window.onscroll = function() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                toTopButton.style.display = "block";
-            } else {
-                toTopButton.style.display = "none";
-            }
-        };
-</script>
-<script src="/assets/js/scrollHomepage.js"></script>
-<script src="/assets/js/removeSocialsAside.js"></script>
-<!-- Bootstrap JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    toTopButton.style.display = "block";
+                } else {
+                    toTopButton.style.display = "none";
+                }
+            };
+    </script>
+    <script src="/assets/js/scrollHomepage.js"></script>
+    <script src="/assets/js/removeSocialsAside.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
