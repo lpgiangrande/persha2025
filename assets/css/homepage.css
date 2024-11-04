@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: whitesmoke;
+  color: #f0f0f0;
 }
 
 .section a {
@@ -31,13 +31,13 @@
     8vw,
     8rem
   ); /* Taille par défaut pour les autres sections */
-  color: whitesmoke;
+  color: #f0f0f0;
   text-transform: uppercase;
 }
 
 #section1 .section-title {
   font-size: clamp(3rem, 8vw, 8rem);
-  color: whitesmoke;
+  color: #f0f0f0;
 }
 
 #section6 .section-title {
@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: whitesmoke;
+  color: #f0f0f0;
   overflow: hidden;
 }
 

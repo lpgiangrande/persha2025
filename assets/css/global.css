@@ -61,29 +61,30 @@ a {
 
 /* LIVE PAGE */
 
-.tour-dates h1 {
-  color: whitesmoke;
+.tour-dates {
+  color: #f0f0f0;
 }
-.tour-dates li {
+/* .tour-dates li {
   color: #4f505e;
-}
+} */
 
 .bg-image-live {
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh;
   background-size: cover; /* Make sure the image covers the entire section */
   background-position: center;
+  background-image: url("../img/livepage/live_l.webp");
 }
 
 @media (max-width: 1280px) {
   .bg-image-live {
-    background-image: url("assets/img/livepage/live_l.webp");
+    background-image: url("../img/livepage/live_l.webp");
   }
 }
 
 /* bg img for smaller screens */
 @media (max-width: 768px) {
   .bg-image-live {
-    background-image: url("assets/img/livepage/live_s.webp");
+    background-image: url("../img/livepage/live_s.webp");
   }
 }
 
