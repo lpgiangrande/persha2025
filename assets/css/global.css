@@ -11,9 +11,27 @@
   box-sizing: border-box;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
+html,
 body {
+  margin: 0;
+  height: 100%;
   background-color: #101012;
   font-family: "TT Hoves Pro Trial", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Main prend tout l'espace disponible dans le wrapper */
 }
 
 h1,
@@ -67,4 +85,25 @@ a {
   .bg-image-live {
     background-image: url("assets/img/livepage/live_s.webp");
   }
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: #101012;
+  color: #d796f2;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-small;
+}
+
+footer a {
+  color: #d796f2;
+}
+
+footer a:hover {
+  color: #86469c;
 }
