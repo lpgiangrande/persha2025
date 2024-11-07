@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Main prend tout l'espace disponible dans le wrapper */
+}
+
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+}
+
+#to-top {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
