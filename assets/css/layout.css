@@ -8,10 +8,13 @@ main {
   flex: 1; /* Main prend tout l'espace disponible dans le wrapper */
 }
 
+/* Scroll up button */
+
 #back-to-top {
   position: fixed;
   right: 20px;
   bottom: 80px;
+  z-index: 1000;
 }
 
 #to-top {
