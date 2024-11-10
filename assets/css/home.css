@@ -1,4 +1,5 @@
-.section {
+/* Appliquer l'overlay uniquement sur les sections de home.html */
+.home-page .section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,68 +10,76 @@
   background-repeat: no-repeat;
   background-color: #212226;
   overflow: hidden;
+  position: relative; /* Nécessaire pour le positionnement de l'overlay */
 }
 
-.section a {
-  color: #d796f2;
-}
-
-.section a:hover {
-  color: #86469c;
-  transition: color 0.3s ease;
-}
-
-.section-title {
-  font-size: clamp(3rem, 8vw, 8rem);
-  color: gainsboro;
-  text-transform: uppercase;
-}
-
-.section-title a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.section-title a:hover {
-  color: #86469c;
-  transition: color 0.3s ease;
-}
-
-/* Styles spécifiques aux sections */
-#section1 {
-  height: 100vh;
-  position: relative;
-}
-
-#section1 .section-title,
-#section1 h1 {
-  position: relative;
-  z-index: 2;
-}
-
-#section1::before {
+/* Filtre d'arrière-plan appliqué à toutes les sections sauf contact (section 6) */
+.home-page .section:not(#section6)::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3); /* Fond sombre pour le contraste */
+  filter: blur(
+    8px
+  ); /* Applique un léger flou pour améliorer la lisibilité du texte */
   z-index: 1;
 }
 
-#section2,
-#section3,
-#section4,
-#section5 {
-  height: 80vh;
+/* Liens et effets au survol */
+.home-page .section a {
+  color: #d796f2;
 }
 
-#section6 {
+.home-page .section a:hover {
+  color: #86469c;
+  transition: color 0.3s ease;
+}
+
+/* Titres */
+.home-page .section-title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  color: gainsboro;
+  text-transform: uppercase;
+  position: relative; /* Nécessaire pour que le texte soit au-dessus du fond sombre */
+  z-index: 2; /* Pour que le texte reste au-dessus de l'overlay */
+}
+
+.home-page .section-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-page .section-title a:hover {
+  color: #86469c;
+  transition: color 0.3s ease;
+}
+
+/* Styles spécifiques aux sections */
+.home-page #section1 {
+  height: 100vh;
+  position: relative; /* Nécessaire pour positionner l'overlay par rapport à la section */
+}
+
+.home-page #section2,
+.home-page #section3,
+.home-page #section4,
+.home-page #section5 {
+  height: 80vh;
+  position: relative; /* Nécessaire pour l'overlay */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #212226;
+}
+
+.home-page #section6 {
   height: 30vh;
   background-color: #867ab6;
 }
 
-#section6 .section-title {
+.home-page #section6 .section-title {
   font-size: clamp(2rem, 3vw, 4rem);
 }
