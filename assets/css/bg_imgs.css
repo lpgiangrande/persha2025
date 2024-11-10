@@ -2,6 +2,7 @@
 
 #section1 {
   background-image: url("/assets/img/lg/bg2024_lg.webp"); /* L */
+  background-position: 50% 20%;
 }
 
 @media (max-width: 1280px) {
@@ -16,25 +17,81 @@
   }
 }
 
-/* HOME - Section 2 */
-
-/* HOME - Section 3 */
+/* HOME - Section 2 - music */
 
 #section2 {
-  background-image: url("../img/lg/live_l.webp");
+  background-image: url("/assets/img/lg/persha3_lg.webp"); /* L */
+  background-position: 50% 20%;
+}
+
+@media (max-width: 1280px) {
+  #section2 {
+    background-image: url("/assets/img/md/persha3_md.webp"); /* M */
+  }
+}
+
+@media (max-width: 768px) {
+  #section2 {
+    background-image: url("/assets/img/s/persha3_xs.webp"); /* S */
+  }
+}
+
+/* HOME - Section 3 - videos */
+
+#section3 {
+  background-image: url("../img/lg/persha1_lg.webp"); /* L */
+}
+
+@media (max-width: 1280px) {
+  #section3 {
+    background-image: url("../img/md/persha1_md.webp"); /* M */
+  }
 }
 
 @media (max-width: 768px) {
   #section3 {
-    background-image: url("../img/s/live_s.webp");
+    background-image: url("../img/s/persha1_xs.webp"); /* S */
   }
 }
 
-/* HOME - Section 4 */
+/* HOME - Section 4 - live */
 
 #section4 {
-  background-image: url("../img/lg/live_l.webp");
+  background-image: url("../img/lg/live_l.webp"); /* L */
 }
+
+@media (max-width: 1280px) {
+  #section4 {
+    background-image: url("../img/lg/live_l.webp"); /* M */
+  }
+}
+
+@media (max-width: 768px) {
+  #section4 {
+    background-image: url("../img/s/live_s.webp"); /* S */
+  }
+}
+
+/* HOME - Section 5 - bio */
+
+#section5 {
+  background-image: url("../img/lg/persha2_lg.webp"); /* L */
+  background-position: 50% 20%;
+}
+
+@media (max-width: 1280px) {
+  #section5 {
+    background-image: url("../img/md/persha2_md.webp"); /* M */
+  }
+}
+
+@media (max-width: 768px) {
+  #section5 {
+    background-image: url("../img/s/persha2_xs.webp"); /* S */
+  }
+}
+
+/* HOME - Section 6 - contact */
 
 /* LIVE */
 
