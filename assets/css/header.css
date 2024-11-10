@@ -1,0 +1,179 @@
+/* nav */
+
+header {
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 4.5vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #101012;
+  margin-top: 80px;
+  padding-bottom: 60px;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  padding-left: 10px; /* Optional: Add padding for spacing from the edge */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #d796f2;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #86469c;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 0.1rem #d796f2, /* Réduction du halo */ 0 0 0.3rem #d796f2; /* Effet réduit */
+    box-shadow: none; /* Pas d'ombre de boîte pour éviter l'arrière-plan */
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/* Applique l'animation uniquement au premier lien de navigation */
+nav a.flicker-effect {
+  animation: flicker 1.5s infinite;
+  font-weight: bold; /* Ajout de la graisse plus épaisse */
+}
+
+nav a.flicker-effect:hover {
+  animation: flicker 1.5s infinite alternate;
+  box-shadow: none;
+}
+
+/* Socials */
+aside.social-icons {
+  position: fixed;
+  top: 50%; /* Positionne l'aside au milieu de l'écran verticalement */
+  right: 30px; /* Distance par rapport au bord gauche */
+  transform: translateY(-50%); /* Centre l'aside verticalement */
+}
+
+aside.social-icons ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+aside.social-icons li {
+  margin: 0.8em 0;
+}
+
+aside.social-icons li a {
+  color: #d796f2;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+aside.social-icons li a:hover {
+  color: #86469c;
+  transition: color 0.3s ease;
+}
+
+/* Styles spécifiques pour le responsive */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center; /* Centre la nav */
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si besoin */
+    justify-content: center; /* Centre les éléments */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Espace entre les éléments */
+  }
+
+  nav ul li:first-child {
+    width: 100%; /* Prend toute la largeur */
+    text-align: center; /* Centre le texte */
+    font-size: 2em; /* Taille du texte de 'PERSHA' */
+  }
+
+  nav ul li:not(:first-child) {
+    display: inline; /* Affiche les autres éléments sur la même ligne */
+  }
+
+  aside.social-icons {
+    display: flex; /* Affiche l'aside en mode flex */
+    flex-direction: row; /* Affiche les icônes en ligne */
+    position: fixed; /* Garder la position fixe */
+    top: 10px; /* Ajustez si nécessaire */
+    left: 30px; /* Positionne à gauche */
+  }
+
+  aside.social-icons ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utilise flexbox pour un affichage en ligne */
+    flex-direction: row; /* Affiche les icônes en ligne */
+    align-items: center; /* Aligne les icônes au centre */
+  }
+
+  aside.social-icons li {
+    margin: 0 10px; /* Ajuste l'espacement entre les icônes */
+  }
+
+  aside.social-icons li a {
+    color: #d796f2; /* Couleur des icônes */
+    font-size: 1.6em; /* Taille des icônes */
+    text-decoration: none; /* Enlève le soulignement */
+  }
+
+  aside.social-icons li a:hover {
+    color: #86469c; /* Couleur au survol */
+    transition: color 0.3s ease; /* Transition pour l'effet de survol */
+  }
+}

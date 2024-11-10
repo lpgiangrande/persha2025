@@ -1,0 +1,62 @@
+/* HOME - Section 1 */
+
+#section1 {
+  background-image: url("/assets/img/lg/bg2024_lg.webp"); /* L */
+}
+
+@media (max-width: 1280px) {
+  #section1 {
+    background-image: url("/assets/img/md/bg2024_md.webp"); /* M */
+  }
+}
+
+@media (max-width: 768px) {
+  #section1 {
+    background-image: url("/assets/img/s/bg2024_xs.webp"); /* S */
+  }
+}
+
+/* HOME - Section 2 */
+
+/* HOME - Section 3 */
+
+#section2 {
+  background-image: url("../img/lg/live_l.webp");
+}
+
+@media (max-width: 768px) {
+  #section3 {
+    background-image: url("../img/s/live_s.webp");
+  }
+}
+
+/* HOME - Section 4 */
+
+#section4 {
+  background-image: url("../img/lg/live_l.webp");
+}
+
+/* LIVE */
+
+.bg-image-live {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/lg/live_l.webp"); /* L */
+}
+
+@media (max-width: 1280px) {
+  .bg-image-live {
+    background-image: url("../img/lg/live_l.webp"); /* M, L */
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-image-live {
+    background-image: url("../img/s/live_s.webp"); /* S */
+  }
+}
+
+/* BIO */
+
+/* CONTACT */

@@ -1,0 +1,20 @@
+/* Importation des polices */
+@import url("https://fonts.cdnfonts.com/css/tt-hoves-pro-trial");
+
+/* Style de base pour les polices */
+html,
+body {
+  font-family: "TT Hoves Pro Trial", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "TT Hoves Pro Trial", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  font-family: "TT Hoves Pro Trial", sans-serif;
+  font-weight: 700;
+}
