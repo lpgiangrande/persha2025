@@ -6,7 +6,7 @@
   flex-direction: column;
   color: gainsboro;
   background-size: cover;
-  background-position: center; /* Positionner correctement l'arrière-plan */
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #212226;
   overflow: hidden;
@@ -41,7 +41,6 @@
 /* Titres */
 .home-page .section-title {
   font-size: clamp(3rem, 8vw, 8rem);
-  color: gainsboro;
   text-transform: uppercase;
   position: relative; /* Nécessaire pour que le texte soit au-dessus du fond sombre */
   z-index: 2; /* Pour que le texte reste au-dessus de l'overlay */
@@ -57,17 +56,13 @@
 .home-page #section3,
 .home-page #section4,
 .home-page #section5 {
-  height: 80vh;
+  height: 100vh;
   position: relative; /* Nécessaire pour l'overlay */
-  background-size: cover;
-  background-position: 50% 20%; /* Utilisation de la position d'arrière-plan */
-  background-repeat: no-repeat;
-  background-color: #212226;
 }
 
 .home-page #section6 {
   height: 30vh;
-  background-color: #3c3e45;
+  background-color: #161619;
 }
 
 .home-page #section6 .section-title {

@@ -99,7 +99,7 @@ aside.social-icons ul {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 aside.social-icons li {
