@@ -19,7 +19,7 @@ header h1 {
 
 nav {
   display: flex;
-  padding-left: 10px; /* Optional: Add padding for spacing from the edge */
+  padding-left: 10px;
 }
 
 nav ul {
@@ -60,15 +60,17 @@ nav a:hover {
   54%,
   56%,
   100% {
-    text-shadow: 0 0 0.1rem #d796f2, /* Réduction du halo */ 0 0 0.3rem #d796f2; /* Effet réduit */
-    box-shadow: none; /* Pas d'ombre de boîte pour éviter l'arrière-plan */
+    color: #d796f2; /* Couleur du texte sans halo */
+    text-shadow: none; /* Pas d'ombre du texte */
+    box-shadow: none; /* Pas d'ombre autour du texte */
   }
 
   20%,
   24%,
   55% {
-    text-shadow: none;
-    box-shadow: none;
+    color: transparent; /* Rend le texte invisible */
+    text-shadow: none; /* Pas d'ombre du texte */
+    box-shadow: none; /* Pas d'ombre autour du texte */
   }
 }
 
@@ -177,3 +179,19 @@ aside.social-icons li a:hover {
     transition: color 0.3s ease; /* Transition pour l'effet de survol */
   }
 }
+
+/* old flicker with halo effect
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 0.1rem #d796f2, 0 0 0.3rem #d796f2;
+    box-shadow: none;
+  }
+
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+ */
