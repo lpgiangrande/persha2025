@@ -120,7 +120,7 @@ aside.social-icons li a:hover {
 }
 
 /* Styles spécifiques pour le responsive */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   nav {
     display: flex;
     justify-content: center; /* Centre la nav */
