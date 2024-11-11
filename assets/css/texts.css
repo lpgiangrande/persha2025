@@ -23,3 +23,10 @@
   text-transform: uppercase;
   text-decoration: underline;
 }
+
+.bio-link {
+  color: #d796f2;
+}
+.bio-link:hover {
+  color: #86469c;
+}
