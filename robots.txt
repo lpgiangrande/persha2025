@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: mentions-legales.html
+Disallow: legal-information.html
