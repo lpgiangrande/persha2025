@@ -1,4 +1,4 @@
-/* Appliquer l'overlay uniquement sur les sections de home.html */
+/* Appliquer le filtre uniquement sur les sections de home.html */
 .home-page .section {
   display: flex;
   justify-content: center;
@@ -8,24 +8,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #212226;
+  background-color: rgba(0, 0, 0, 0.3); /* Couleur noire semi-transparente */
+  background-blend-mode: darken; /* Mélange la couleur avec l'image */
   overflow: hidden;
-  position: relative; /* Nécessaire pour le positionnement de l'overlay */
-}
-
-/* Filtre d'arrière-plan appliqué à toutes les sections sauf contact (section 6) */
-.home-page .section:not(#section6)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3); /* Fond sombre pour le contraste */
-  filter: blur(
-    8px
-  ); /* Applique un léger flou pour améliorer la lisibilité du texte */
-  z-index: 0; /* Met l'overlay sous le texte */
+  position: relative; /* Nécessaire pour le positionnement du texte */
 }
 
 /* Liens et effets au survol */
@@ -42,13 +28,9 @@
 .home-page .section-title {
   font-size: clamp(3rem, 8vw, 8rem);
   text-transform: uppercase;
-  position: relative; /* Nécessaire pour que le texte soit au-dessus du fond sombre */
-  z-index: 2; /* Pour que le texte reste au-dessus de l'overlay */
+  position: relative; /* Nécessaire pour que le texte soit au-dessus du fond */
+  z-index: 2; /* Assure que le texte reste au-dessus du fond sombre */
 }
-
-/* .home-page .section-title a {
-  text-decoration: none;
-} */
 
 /* Styles spécifiques aux sections */
 .home-page #section1,
@@ -57,9 +39,10 @@
 .home-page #section4,
 .home-page #section5 {
   height: 100vh;
-  position: relative; /* Nécessaire pour l'overlay */
+  position: relative; /* Nécessaire pour le positionnement de l'image et du texte */
 }
 
+/* Section 6 - Pas d'overlay appliqué ici */
 .home-page #section6 {
   height: 30vh;
   background-color: #161619;

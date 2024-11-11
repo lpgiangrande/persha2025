@@ -101,6 +101,8 @@
   background-size: cover;
   background-position: center;
   background-image: url("../img/lg/live_l.webp"); /* L */
+  background-color: rgba(0, 0, 0, 0.3); /* Couleur noire semi-transparente */
+  background-blend-mode: darken; /* Mélange la couleur avec l'image */
 }
 
 @media (max-width: 1280px) {

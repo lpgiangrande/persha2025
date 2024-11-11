@@ -2,6 +2,11 @@
   color: gainsboro;
 }
 
+.tour-dates {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .spotify-profile-link {
   color: #d796f2;
   font-size: clamp(2rem, 7vw, 8rem);
