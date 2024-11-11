@@ -1,3 +1,20 @@
 .text-bloc {
   color: gainsboro;
 }
+
+.spotify-profile-link {
+  color: #d796f2;
+  font-size: clamp(2rem, 7vw, 8rem);
+  text-transform: uppercase;
+}
+
+.spotify-profile-link:hover {
+  color: #86469c;
+}
+
+.discography {
+  color: #d796f2;
+  font-size: clamp(1rem, 2vw, 3rem);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
