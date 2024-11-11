@@ -151,7 +151,7 @@ aside.social-icons li a:hover {
     display: flex; /* Affiche l'aside en mode flex */
     flex-direction: row; /* Affiche les icônes en ligne */
     position: fixed; /* Garder la position fixe */
-    top: 10px; /* Ajustez si nécessaire */
+    top: 30px; /* Ajustez si nécessaire */
     left: 30px; /* Positionne à gauche */
   }
 
