@@ -85,12 +85,14 @@ nav a.flicker-effect:hover {
   box-shadow: none;
 }
 
-/* Socials */
+/* ASIDE SOCIAL MEDIA ICONS */
 aside.social-icons {
   position: fixed;
   top: 50%; /* Positionne l'aside au milieu de l'écran verticalement */
   right: 30px; /* Distance par rapport au bord gauche */
   transform: translateY(-50%); /* Centre l'aside verticalement */
+  transition: transform 0.3s ease-in-out; /* Animation fluide lors du changement de position */
+  z-index: 9999; /* Assure qu'il soit au-dessus des autres éléments */
 }
 
 aside.social-icons ul {
@@ -148,11 +150,16 @@ aside.social-icons li a:hover {
   }
 
   aside.social-icons {
-    display: flex; /* Affiche l'aside en mode flex */
-    flex-direction: row; /* Affiche les icônes en ligne */
-    position: fixed; /* Garder la position fixe */
-    top: 30px; /* Ajustez si nécessaire */
-    left: 30px; /* Positionne à gauche */
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 100%; /* Assure que l'aside prend toute la largeur de l'écran */
+    display: flex;
+    justify-content: center; /* Centre les icônes horizontalement */
+    gap: 20px; /* Espace entre les icônes */
+    padding: 0 10px; /* Espacement interne pour éviter que les icônes ne touchent les bords */
+    z-index: 9999; /* Assure que l'aside reste au-dessus */
   }
 
   aside.social-icons ul {
