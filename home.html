@@ -61,7 +61,7 @@
     <main>
         <section class="section" id="section1"><!--INTRO-->
             <h2 class="section-title text-center">
-                new ep coming soon
+                new single coming soon
             </h2>
         </section>
         <section class="section" id="section2"><!--MUSIC-->
@@ -97,6 +97,8 @@
             <span><a href="/legal-information.html">| legal information </a></span>
         </div>
     </footer>   
+    <!--cookies TEST-->
+    
 <!--scroll to top button-->
 <script>
     const toTopButton = document.getElementById('to-top');
@@ -115,6 +117,12 @@
                 toTopButton.style.display = "none";
             }
         };
+</script>
+<script>
+    // remove #section from urls
+    if (window.location.hash) {
+    window.history.pushState("", document.title, window.location.pathname + window.location.search);
+}
 </script>
 <script src="/assets/js/scrollHomepage.js"></script>
 <script src="/assets/js/removeSocialsAside.js"></script>
