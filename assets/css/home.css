@@ -6,12 +6,6 @@
   flex-direction: column;
   /* color: gainsboro; */
 
-  color: #fff; /* White text color */
-  text-shadow: 0 0 15px rgba(255, 51, 153, 1),
-    /* Bright and thick inner pink-red halo */ 0 0 30px rgba(255, 51, 153, 0.8),
-    /* Expanded middle pink-red halo */ 0 0 50px rgba(255, 51, 153, 0.6),
-    /* Softer and wider pink-red glow */ 0 0 80px rgba(255, 51, 153, 0.4); /* Diffuse outer pink-red halo */
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,16 +13,17 @@
   background-blend-mode: darken; /* Mélange la couleur avec l'image */
   overflow: hidden;
   position: relative; /* Nécessaire pour le positionnement du texte */
+
+  color: #ffe6f2;
+  text-shadow: 0 0 8px rgba(255, 51, 153, 1), 0 0 16px rgba(255, 51, 153, 0.8),
+    0 0 24px rgba(255, 51, 153, 0.6), 0 0 40px rgba(255, 51, 153, 0.4);
 }
 
 /* Liens et effets au survol */
 .home-page .section a {
-  color: #fff; /* White text color */
-  text-shadow: 0 0 25px rgba(255, 51, 153, 0.9),
-    /* Larger, soft inner pink-red halo */ 0 0 50px rgba(255, 51, 153, 0.6),
-    /* Softer, wider pink-red halo */ 0 0 75px rgba(255, 51, 153, 0.4),
-    /* Even wider and more diffuse pink-red glow */ 0 0 100px
-      rgba(255, 51, 153, 0.3); /* Very diffuse outer pink-red halo */
+  color: #ffe6f2;
+  text-shadow: 0 0 8px rgba(255, 51, 153, 1), 0 0 16px rgba(255, 51, 153, 0.8),
+    0 0 24px rgba(255, 51, 153, 0.6), 0 0 40px rgba(255, 51, 153, 0.4);
 }
 
 .home-page .section a:hover {
@@ -42,6 +37,7 @@
   text-transform: uppercase;
   position: relative; /* Nécessaire pour que le texte soit au-dessus du fond */
   z-index: 2; /* Assure que le texte reste au-dessus du fond sombre */
+  filter: blur(0.6px);
 }
 
 /* Styles spécifiques aux sections */

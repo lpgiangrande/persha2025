@@ -17,11 +17,9 @@ header h1 {
   font-weight: 800;
   /* animation: pulsate 0.11s ease-in-out infinite alternate; */
 
-  color: #fff; /* White text color */
-  text-shadow: 0 0 15px rgba(255, 51, 153, 0.8),
-    /* Reduced and softer inner pink-red halo */ 0 0 30px
-      rgba(255, 51, 153, 0.5),
-    /* Reduced middle pink-red halo */ 0 0 50px rgba(255, 51, 153, 0.3); /* Reduced and more diffuse outer pink-red glow */
+  color: #ffe6f2;
+  text-shadow: 0 0 8px rgba(255, 51, 153, 1), 0 0 16px rgba(255, 51, 153, 0.8),
+    0 0 24px rgba(255, 51, 153, 0.6), 0 0 40px rgba(255, 51, 153, 0.4);
 }
 
 nav {
@@ -49,11 +47,11 @@ nav ul li a {
   font-weight: 700;
   letter-spacing: -0.07em;
 
-  color: #fff; /* White text color */
-  text-shadow: 0 0 15px rgba(255, 51, 153, 0.8),
-    /* Reduced and softer inner pink-red halo */ 0 0 30px
-      rgba(255, 51, 153, 0.5),
-    /* Reduced middle pink-red halo */ 0 0 50px rgba(255, 51, 153, 0.3); /* Reduced and more diffuse outer pink-red glow */
+  color: #ffe6f2;
+  text-shadow: 0 0 8px rgba(255, 51, 153, 1), 0 0 16px rgba(255, 51, 153, 0.8),
+    0 0 24px rgba(255, 51, 153, 0.6), 0 0 40px rgba(255, 51, 153, 0.4);
+
+  filter: blur(0.5px);
 }
 
 nav a:hover {
@@ -101,14 +99,14 @@ nav a:hover {
 
 /* Applique l'animation uniquement au premier lien de navigation */
 nav a.flicker-effect {
-  animation: flicker 1.5s infinite;
-  font-weight: bold; /* Ajout de la graisse plus épaisse */
+  /* animation: flicker 1.5s infinite;
+  font-weight: bold; */
 }
 
-nav a.flicker-effect:hover {
+/* nav a.flicker-effect:hover {
   animation: flicker 1.5s infinite alternate;
   box-shadow: none;
-}
+} */
 
 /* ASIDE SOCIAL MEDIA ICONS */
 aside.social-icons {
