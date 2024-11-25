@@ -66,16 +66,14 @@ nav a:hover {
 }
 
 /* new */
-@keyframes pulsate {
+/* @keyframes pulsate {
   100% {
-    /* Subtle glow with fewer and softer layers */
     text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 6px #f09, 0 0 12px #f09;
   }
   0% {
-    /* Even softer glow for the starting point */
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #f09, 0 0 10px #f09;
   }
-}
+} */
 
 /* old */
 /* @keyframes flicker {
@@ -136,7 +134,7 @@ aside.social-icons li {
 }
 
 aside.social-icons li a {
-  color: #e4016b;
+  color: #ff3399;
   font-size: 1.6em;
   text-decoration: none;
 }
