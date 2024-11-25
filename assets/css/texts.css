@@ -1,3 +1,7 @@
+.home-page .section a {
+  text-decoration: none;
+}
+
 .text-bloc {
   color: gainsboro;
 }
@@ -8,25 +12,25 @@
 }
 
 .spotify-profile-link {
-  color: #d796f2;
+  color: #ff3399;
   font-size: clamp(2rem, 7vw, 8rem);
   text-transform: uppercase;
 }
 
 .spotify-profile-link:hover {
-  color: #86469c;
+  color: #c51f5b;
 }
 
 .discography {
-  color: #d796f2;
+  color: #ff3399;
   font-size: clamp(1rem, 2vw, 3rem);
   text-transform: uppercase;
   text-decoration: underline;
 }
 
 .bio-link {
-  color: #d796f2;
+  color: #ff3399;
 }
 .bio-link:hover {
-  color: #86469c;
+  color: #ff2a84;
 }

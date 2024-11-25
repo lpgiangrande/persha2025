@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   background-color: #101012;
-  color: #d796f2;
+  color: #ff3399;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -10,9 +10,9 @@ footer {
 }
 
 footer a {
-  color: #d796f2;
+  color: #ff3399;
 }
 
 footer a:hover {
-  color: #86469c;
+  color: #ff66b2;
 }

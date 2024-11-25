@@ -14,7 +14,14 @@ header {
 }
 
 header h1 {
-  font-weight: 700;
+  font-weight: 800;
+  /* animation: pulsate 0.11s ease-in-out infinite alternate; */
+
+  color: #fff; /* White text color */
+  text-shadow: 0 0 15px rgba(255, 51, 153, 0.8),
+    /* Reduced and softer inner pink-red halo */ 0 0 30px
+      rgba(255, 51, 153, 0.5),
+    /* Reduced middle pink-red halo */ 0 0 50px rgba(255, 51, 153, 0.3); /* Reduced and more diffuse outer pink-red glow */
 }
 
 nav {
@@ -31,19 +38,26 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 nav ul li a {
-  color: #d796f2;
+  color: #ff3399;
   text-decoration: none;
   font-size: 1.2em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+
+  color: #fff; /* White text color */
+  text-shadow: 0 0 15px rgba(255, 51, 153, 0.8),
+    /* Reduced and softer inner pink-red halo */ 0 0 30px
+      rgba(255, 51, 153, 0.5),
+    /* Reduced middle pink-red halo */ 0 0 50px rgba(255, 51, 153, 0.3); /* Reduced and more diffuse outer pink-red glow */
 }
 
 nav a:hover {
-  color: #86469c;
+  color: #ff66b2;
 }
 
 .logo {
@@ -51,7 +65,20 @@ nav a:hover {
   width: auto;
 }
 
-@keyframes flicker {
+/* new */
+@keyframes pulsate {
+  100% {
+    /* Subtle glow with fewer and softer layers */
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 6px #f09, 0 0 12px #f09;
+  }
+  0% {
+    /* Even softer glow for the starting point */
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #f09, 0 0 10px #f09;
+  }
+}
+
+/* old */
+/* @keyframes flicker {
   0%,
   19%,
   21%,
@@ -60,19 +87,19 @@ nav a:hover {
   54%,
   56%,
   100% {
-    color: #d796f2; /* Couleur du texte sans halo */
-    text-shadow: none; /* Pas d'ombre du texte */
-    box-shadow: none; /* Pas d'ombre autour du texte */
+    color: #e4016b; 
+    text-shadow: none; 
+    box-shadow: none; 
   }
 
   20%,
   24%,
   55% {
-    color: transparent; /* Rend le texte invisible */
-    text-shadow: none; /* Pas d'ombre du texte */
-    box-shadow: none; /* Pas d'ombre autour du texte */
+    color: transparent; 
+    text-shadow: none; 
+    box-shadow: none; 
   }
-}
+} */
 
 /* Applique l'animation uniquement au premier lien de navigation */
 nav a.flicker-effect {
@@ -109,13 +136,13 @@ aside.social-icons li {
 }
 
 aside.social-icons li a {
-  color: #d796f2;
+  color: #e4016b;
   font-size: 1.6em;
   text-decoration: none;
 }
 
 aside.social-icons li a:hover {
-  color: #86469c;
+  color: #ff66b2;
   transition: color 0.3s ease;
 }
 
@@ -166,39 +193,46 @@ aside.social-icons li a:hover {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Utilise flexbox pour un affichage en ligne */
-    flex-direction: row; /* Affiche les icônes en ligne */
-    align-items: center; /* Aligne les icônes au centre */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   aside.social-icons li {
-    margin: 0 10px; /* Ajuste l'espacement entre les icônes */
+    margin: 0 10px;
   }
 
   aside.social-icons li a {
-    color: #d796f2; /* Couleur des icônes */
-    font-size: 1.6em; /* Taille des icônes */
-    text-decoration: none; /* Enlève le soulignement */
+    color: #ff3399;
+    font-size: 1.6em;
+    text-decoration: none;
   }
 
   aside.social-icons li a:hover {
-    color: #86469c; /* Couleur au survol */
+    color: #ff66b2;
     transition: color 0.3s ease; /* Transition pour l'effet de survol */
   }
 }
 
-/* old flicker with halo effect
+/* old flicker with halo effect */
 
-@keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: 0 0 0.1rem #d796f2, 0 0 0.3rem #d796f2;
+/* @keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 0.1rem #ff2a84, 0 0 0.3rem #ddbbc9;
     box-shadow: none;
   }
 
-  20%, 24%, 55% {
+  20%,
+  24%,
+  55% {
     text-shadow: none;
     box-shadow: none;
   }
-}
-
- */
+} */

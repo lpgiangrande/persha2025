@@ -11,7 +11,8 @@ h1,
 h2,
 h3 {
   font-family: "TT Hoves Pro Trial", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.07em;
 }
 
 a {
