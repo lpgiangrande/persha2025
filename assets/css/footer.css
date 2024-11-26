@@ -11,6 +11,7 @@ footer {
 
 footer a {
   color: #ff3399;
+  text-decoration: none;
 }
 
 footer #mangata:hover {

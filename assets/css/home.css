@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* color: gainsboro; */
 
   background-size: cover;
   background-position: center;
@@ -21,15 +20,13 @@
 
 /* Liens et effets au survol */
 .home-page .section a {
-  color: #ffe6f2;
-  text-shadow: 0 0 8px rgba(255, 51, 153, 1), 0 0 16px rgba(255, 51, 153, 0.8),
-    0 0 24px rgba(255, 51, 153, 0.6), 0 0 40px rgba(255, 51, 153, 0.4);
+  color: inherit; /* Hérite de la couleur de la section */
+  text-shadow: inherit; /* Hérite du text-shadow de la section */
 }
 
 .home-page .section a:hover {
   color: #ff2a84;
-  text-shadow: 0 0 1px rgba(255, 51, 153, 1),
-    /* Réduction du rayon */ 0 0 12px rgba(255, 51, 153, 0.7),
+  text-shadow: 0 0 1px rgba(255, 51, 153, 1), 0 0 12px rgba(255, 51, 153, 0.7),
     0 0 18px rgba(255, 51, 153, 0.5), 0 0 24px rgba(255, 51, 153, 0.3); /* Réduction des halos */
   transition: text-shadow 0.3s ease, color 0.3s ease;
 }
@@ -40,7 +37,7 @@
   text-transform: uppercase;
   position: relative; /* Nécessaire pour que le texte soit au-dessus du fond */
   z-index: 2; /* Assure que le texte reste au-dessus du fond sombre */
-  filter: blur(0.6px);
+  /* filter: blur(0.6px); Si vous ne souhaitez pas cet effet, vous pouvez le supprimer */
 }
 
 /* Styles spécifiques aux sections */
