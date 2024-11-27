@@ -18,7 +18,6 @@
     0 0 24px rgba(255, 51, 153, 0.6), 0 0 40px rgba(255, 51, 153, 0.4);
 }
 
-/* Liens et effets au survol */
 .home-page .section a {
   color: inherit; /* Hérite de la couleur de la section */
   text-shadow: inherit; /* Hérite du text-shadow de la section */
@@ -37,7 +36,6 @@
   text-transform: uppercase;
   position: relative; /* Nécessaire pour que le texte soit au-dessus du fond */
   z-index: 2; /* Assure que le texte reste au-dessus du fond sombre */
-  /* filter: blur(0.6px); Si vous ne souhaitez pas cet effet, vous pouvez le supprimer */
 }
 
 /* Styles spécifiques aux sections */

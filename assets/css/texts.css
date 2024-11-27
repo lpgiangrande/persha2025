@@ -1,15 +1,34 @@
+/* HEADER */
+header h1,
+nav ul li a {
+  color: #ffe6f2;
+}
+
+/* HOMEPAGE */
 .home-page .section a {
   text-decoration: none;
 }
 
+/* BIO */
 .text-bloc {
   color: gainsboro;
 }
+
+.bio-link {
+  color: #ff3399;
+}
+.bio-link:hover {
+  color: #ff66b2;
+}
+
+/* LIVE */
 
 .tour-dates {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+/* MUSIC */
 
 .spotify-profile-link {
   color: #ff3399;
@@ -28,9 +47,7 @@
   text-decoration: underline;
 }
 
-.bio-link {
-  color: #ff3399;
-}
-.bio-link:hover {
-  color: #ff66b2;
+/* FOOTER */
+footer {
+  font-size: x-small;
 }

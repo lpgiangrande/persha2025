@@ -3,17 +3,13 @@ header {
   position: relative;
   width: 100%;
   z-index: 1000;
-  margin-top: 4.5vh;
   display: flex;
   justify-content: center;
-  padding: 10px;
   background-color: #101012;
-  margin-top: 80px;
-  padding-bottom: 60px;
-  -webkit-font-smoothing: antialiased; /* Lissage de la police pour Safari */
+  padding-bottom: 3.75rem;
+  padding-top: 4rem;
 }
 
-/* Titre du header */
 header h1 {
   font-weight: 800;
   color: #ffe6f2;
@@ -21,7 +17,6 @@ header h1 {
     0 0 24px rgba(255, 51, 153, 0.6), 0 0 40px rgba(255, 51, 153, 0.4);
 }
 
-/* Navigation */
 nav {
   display: flex;
   padding-left: 10px;
@@ -40,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffe6f2; /* Couleur du texte des liens */
+  color: #ffe6f2;
   text-decoration: none;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -52,9 +47,8 @@ nav ul li a {
   transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease; /* Transition fluide */
 }
 
-/* Au survol des liens */
 nav a:hover {
-  color: #ff2a84; /* Couleur au survol */
+  color: #ff2a84;
   text-shadow: 0 0 12px rgba(255, 51, 153, 1); /* Ombre plus nette au hover */
   transform: translateY(-2px); /* Effet de remontée lors du survol */
   background-color: transparent; /* Assure qu'il n'y ait pas de fond ajouté */
@@ -98,14 +92,14 @@ aside.social-icons li a {
 
 aside.social-icons li a:hover {
   color: #ff66b2;
-  transition: color 0.3s ease; /* Transition au survol */
+  transition: color 0.3s ease;
 }
 
 /* Responsive design */
 @media (max-width: 1000px) {
   nav {
     display: flex;
-    justify-content: center; /* Centrer la navigation */
+    justify-content: center;
   }
 
   nav ul {
@@ -122,7 +116,7 @@ aside.social-icons li a:hover {
   }
 
   nav ul li:first-child {
-    width: 100%; /* Prend toute la largeur */
+    width: 100%; /* "PERSHA" de la nav prend toute la largeur */
     text-align: center;
     font-size: 2em;
   }
