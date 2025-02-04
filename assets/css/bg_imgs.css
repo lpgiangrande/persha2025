@@ -97,9 +97,9 @@
 /* LIVE */
 
 .bg-image-live {
-  min-height: 100vh;
+  min-height: 70vh;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-image: url("../img/lg/live_l.webp"); /* L */
   background-color: rgba(0, 0, 0, 0.3); /* Couleur noire semi-transparente */
   background-blend-mode: darken; /* Mélange la couleur avec l'image */

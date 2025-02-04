@@ -1,21 +1,23 @@
 /* Importation des polices */
-@import url("https://fonts.cdnfonts.com/css/tt-hoves-pro-trial");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Style de base pour les polices */
 html,
 body {
-  font-family: "TT Hoves Pro Trial", sans-serif;
+  font-family: "Urbanist", serif;
+  font-weight: 600;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "TT Hoves Pro Trial", sans-serif;
-  font-weight: 700;
+  font-family: "Poppins", serif;
+  font-weight: 800;
   letter-spacing: -0.07em;
 }
 
 a {
-  font-family: "TT Hoves Pro Trial", sans-serif;
+  font-family: "Poppins", serif;
   font-weight: 700;
 }

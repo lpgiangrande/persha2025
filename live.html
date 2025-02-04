@@ -62,17 +62,17 @@
             <div class="container text-center tour-dates">
                 <!-- Tour Dates Section -->
                 <section class="text-bloc mt-4"> 
+                    <h1>Upcoming Tour Dates</h1>
+                    <ul class="list-unstyled">
+                        <li>December 19th, 2024 - Fox Cabaret - Vancouver, BC, Canada</li>
+                    </ul>
+                    <br>
                     <h1>Past Dates</h1>
                     <ul class="list-unstyled">
                         <li>June 22th, 2022 - Paris Zénith with Carpenter Brut - France</li>
                         <li>October 30th, 2022 - Paris Zénith with Carpenter Brut - France</li>
                         <li>June 16th, 2023 - Lille Aéronef with Carpenter Brut - France</li>
                         <li>June 17th, 2023 - Clisson Hellfest with Carpenter Brut - France</li>
-                    </ul>
-                    <br>
-                    <h1>Upcoming Tour Dates</h1>
-                    <ul class="list-unstyled">
-                        <li>Stay tuned</li>
                     </ul>
                 </section>
             </div>
@@ -88,22 +88,31 @@
     </div>   
     <!--scroll to top button-->
     <script>
-        const toTopButton = document.getElementById('to-top');
+    const toTopButton = document.getElementById('to-top');
 
-        toTopButton.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' 
-            });
-        });
-        // Show or hide the button based on scroll position
-        window.onscroll = function() {
+    // Vérifier si le bouton doit être affiché ou non
+    function checkScrollVisibility() {
+        const scrollableHeight = document.documentElement.scrollHeight; // Hauteur totale de la page
+        const viewportHeight = window.innerHeight; // Hauteur visible de la fenêtre
+
+        if (scrollableHeight > viewportHeight) {
+            // La page est plus grande que la fenêtre visible
+            window.onscroll = function () {
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                     toTopButton.style.display = "block";
                 } else {
                     toTopButton.style.display = "none";
                 }
             };
+        } else {
+            // La page est trop courte, pas besoin du bouton
+            toTopButton.style.display = "none";
+        }
+    }
+
+    // Appeler la fonction au chargement de la page
+    checkScrollVisibility();
+
     </script>
     <script src="/assets/js/scrollHomepage.js"></script>
     <script src="/assets/js/removeSocialsAside.js"></script>
