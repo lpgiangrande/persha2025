@@ -6,14 +6,14 @@
     <!-- SEO -->
     <meta name="description" content="Singer and songwriter Persha's official website">
     <meta name="keywords" content="Persha, persha singer, persha songwriter, persha composer, persha music, electro music, pop music, vanessa giangrande, persha website, mangata music">
-    <meta name="google-site-verification" content="-tebtZ-goehxv49XiA1vUa8T54A0bXlPfkAun7iUPrs" />
+    <meta name="google-site-verification" content="-tebtZ-goehxv49XiA1vUa8T54A0bXlPfkAun7iUPrs">
     <link rel="canonical" href="https://www.pershamusic.com/">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--FONTAWESOME CDN-->
     <script src="https://kit.fontawesome.com/5d934be3de.js" crossorigin="anonymous" defer></script>
     <!--CSS-->
-    <link rel="stylesheet" href="/assets/css/global.css?v=1.0.1">
+    <link rel="stylesheet" href="/assets/css/global.css?v=1.0.4">
     <!-- Import Lenis CSS -->
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
     <!-- Import Lenis JS -->
@@ -64,11 +64,15 @@
                 <section class="text-bloc mt-4"> 
                     <h1>Upcoming Tour Dates</h1>
                     <ul class="list-unstyled">
-                        <li>December 19th, 2024 - Fox Cabaret - Vancouver, BC, Canada</li>
+                        <li>June 6th, 2025 - The Roxy Cabaret Cabaret - Vancouver BC, Canada 
+                            <a class="purchase" href="https://www.roxyvan.com/events#" target="_blank" rel="noopener noreferrer">Get Tickets
+                            </a>
+                        </li>
                     </ul>
                     <br>
                     <h1>Past Dates</h1>
                     <ul class="list-unstyled">
+                        <li>December 19th, 2024 - Fox Cabaret - Vancouver BC, Canada</li>
                         <li>June 22th, 2022 - Paris Zénith with Carpenter Brut - France</li>
                         <li>October 30th, 2022 - Paris Zénith with Carpenter Brut - France</li>
                         <li>June 16th, 2023 - Lille Aéronef with Carpenter Brut - France</li>
@@ -86,36 +90,9 @@
             </div>
         </footer>  
     </div>   
-    <!--scroll to top button-->
-    <script>
-    const toTopButton = document.getElementById('to-top');
-
-    // Vérifier si le bouton doit être affiché ou non
-    function checkScrollVisibility() {
-        const scrollableHeight = document.documentElement.scrollHeight; // Hauteur totale de la page
-        const viewportHeight = window.innerHeight; // Hauteur visible de la fenêtre
-
-        if (scrollableHeight > viewportHeight) {
-            // La page est plus grande que la fenêtre visible
-            window.onscroll = function () {
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    toTopButton.style.display = "block";
-                } else {
-                    toTopButton.style.display = "none";
-                }
-            };
-        } else {
-            // La page est trop courte, pas besoin du bouton
-            toTopButton.style.display = "none";
-        }
-    }
-
-    // Appeler la fonction au chargement de la page
-    checkScrollVisibility();
-
-    </script>
     <script src="/assets/js/scrollHomepage.js"></script>
     <script src="/assets/js/removeSocialsAside.js"></script>
+    <script src="/assets/js/cleanUrl.js"></script>
     <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

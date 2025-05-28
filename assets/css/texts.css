@@ -8,16 +8,23 @@ nav ul li a {
 .home-page .section a {
   text-decoration: none;
 }
+.home-page h3 {
+  text-transform: uppercase;
+}
 
 /* BIO */
 .text-bloc {
   color: gainsboro;
 }
 
-.bio-link {
+.bio-link,
+.purchase {
   color: #ff3399;
 }
 .bio-link:hover {
+  color: #ff66b2;
+}
+.purchase:hover {
   color: #ff66b2;
 }
 

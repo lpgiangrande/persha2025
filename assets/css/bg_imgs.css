@@ -1,19 +1,19 @@
 /* HOME - Section 1 */
 
 #section1 {
-  background-image: url("/assets/img/lg/bg2024_lg.webp"); /* L */
+  background-image: url("/assets/img/lg/persha_lab_lg.webp"); /* L */
   background-position: 50% 20%;
 }
 
 @media (max-width: 1280px) {
   #section1 {
-    background-image: url("/assets/img/md/bg2024_md.webp"); /* M */
+    background-image: url("/assets/img/md/persha_lab_md.webp"); /* M */
   }
 }
 
 @media (max-width: 768px) {
   #section1 {
-    background-image: url("/assets/img/s/bg2024_xs.webp"); /* S */
+    background-image: url("/assets/img/s/persha_lab_xs.webp"); /* S */
   }
 }
 
