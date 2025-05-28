@@ -20,39 +20,39 @@
 /* HOME - Section 2 - music */
 
 #section2 {
-  background-image: url("/assets/img/lg/persha3_lg.webp"); /* L */
+  background-image: url("../img/lg/live2_lg.webp"); /* L */
   background-position: 50% 20%;
 }
 
 @media (max-width: 1280px) {
   #section2 {
-    background-image: url("/assets/img/md/persha3_md.webp"); /* M */
-  }
-}
-
-@media (max-width: 768px) {
-  #section2 {
-    background-image: url("/assets/img/s/persha3_xs.webp"); /* S */
-  }
-}
-
-/* HOME - Section 3 - live */
-
-#section3 {
-  background-image: url("../img/lg/live2_lg.webp"); /* L */
-}
-
-@media (max-width: 1280px) {
-  #section3 {
     background-image: url("../img/md/live2_md.webp"); /* M */
   }
 }
 
 @media (max-width: 768px) {
-  #section3 {
+  #section2 {
     background-image: url("../img/s/live2_xs.webp"); /* S */
   }
 }
+
+/* HOME - Section 3 - live (remplacée par les anciennes images de section 2) */
+#section3 {
+  background-image: url("/assets/img/lg/persha3_lg.webp"); /* L */
+}
+
+@media (max-width: 1280px) {
+  #section3 {
+    background-image: url("/assets/img/md/persha3_md.webp"); /* M */
+  }
+}
+
+@media (max-width: 768px) {
+  #section3 {
+    background-image: url("/assets/img/s/persha3_xs.webp"); /* S */
+  }
+}
+
 
 /* HOME - Section 4 - videos */
 
